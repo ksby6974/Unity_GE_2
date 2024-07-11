@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GE_240711 브루트 포스/1.0.0": {
+        "runtime": {
+          "GE_240711 브루트 포스.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GE_240711 브루트 포스/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

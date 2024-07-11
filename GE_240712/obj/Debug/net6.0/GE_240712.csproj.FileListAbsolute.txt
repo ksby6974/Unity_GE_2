@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.sourcelink.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240712.exe
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240712.deps.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240712.runtimeconfig.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240712.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240712.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\refint\GE_240712.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240712.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\ref\GE_240712.dll

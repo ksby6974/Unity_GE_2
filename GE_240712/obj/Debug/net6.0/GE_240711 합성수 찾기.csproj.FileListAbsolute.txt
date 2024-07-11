@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240711 합성수 찾기.exe
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240711 합성수 찾기.deps.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240711 합성수 찾기.runtimeconfig.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240711 합성수 찾기.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\bin\Debug\net6.0\GE_240711 합성수 찾기.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.sourcelink.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\refint\GE_240711 합성수 찾기.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\GE_240711 합성수 찾기.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GE_240712\obj\Debug\net6.0\ref\GE_240711 합성수 찾기.dll

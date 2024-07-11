@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GE_240711 합성수 찾기/1.0.0": {
+        "runtime": {
+          "GE_240711 합성수 찾기.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GE_240711 합성수 찾기/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
