@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "Program.csproj",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240711 브루트 포스", "..\GE_240711\GE_240711 브루트 포스.csproj", "{80220B06-BD9F-411F-B6E4-7D5E78E6D6BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240711 합성수 찾기", "..\GE_240712\GE_240711 합성수 찾기.csproj", "{7D3B535E-D142-44F9-AA5A-E493080149C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240711 합성수 찾기", "..\GE_240712\GE_240711 합성수 찾기.csproj", "{7D3B535E-D142-44F9-AA5A-E493080149C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240712 체 (미완)", "..\GE_240712 체\GE_240712 체 (미완).csproj", "{FCC62D0F-E787-4034-972F-EF857FB14D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240712 재정렬", "..\GE_240712 재정렬\GE_240712 재정렬.csproj", "{5E7E387C-A6C0-4883-9B7A-8412E798B41F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{7D3B535E-D142-44F9-AA5A-E493080149C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3B535E-D142-44F9-AA5A-E493080149C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3B535E-D142-44F9-AA5A-E493080149C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC62D0F-E787-4034-972F-EF857FB14D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC62D0F-E787-4034-972F-EF857FB14D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC62D0F-E787-4034-972F-EF857FB14D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC62D0F-E787-4034-972F-EF857FB14D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7E387C-A6C0-4883-9B7A-8412E798B41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7E387C-A6C0-4883-9B7A-8412E798B41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7E387C-A6C0-4883-9B7A-8412E798B41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7E387C-A6C0-4883-9B7A-8412E798B41F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
