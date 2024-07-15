@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240712 재정렬\\GE_240712 재정렬.csproj",
-      "projectName": "GE_240712 재정렬",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240712 재정렬\\GE_240712 재정렬.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240712 재정렬\\GE_240712 거품정렬.csproj",
+      "projectName": "GE_240712 거품정렬",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240712 재정렬\\GE_240712 거품정렬.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240712 재정렬\\obj\\",
       "projectStyle": "PackageReference",

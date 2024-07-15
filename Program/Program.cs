@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.Design;
+﻿using System;
+using System.ComponentModel.Design;
+using System.Diagnostics.Metrics;
 
 namespace Program
 {
@@ -46,36 +48,37 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            #region 선택정렬
-            // 주어진 리스트 중에 최소값을 찾아서 맨앞에 위치한 결과를
-            // 교체하는 방식으로 정렬하는 알고리즘
+            #region 계수 정렬 Count Sort
+            // 데이터의 값을 직접 비교하지 않고
+            // 단순히 각 숫자가 몇 개 있는 지 개수를 세어
+            // 저장한 다음 정렬하는 알고리즘
             #endregion
 
-            int[] iArray = new int[] { 6, 3, 7, 9, 5 };
+            int[] iArray = new int[] { 1, 6, 6, 6, 5, 1, 2, 3, 1, 2, 3, 6, 5, 4 };
+            int[] iCount = new int[6];
 
-            for (int i = 0; i < iArray.Length - 1; i++)
-            {
-                int iMin = iArray[i];
-                int iSelect = i;
-
-                for (int j = i + 1; j < iArray.Length - 1; j++)
-                {
-                    if (iMin > iArray[j])
-                    {
-                        iMin = iArray[j];
-                        iSelect = j;
-                    }
-                }
-
-                int iTemp = iArray[i];
-                iArray[i] = iArray[iSelect];
-                iArray[iSelect] = iTemp;
-            }
-     
-            Console.WriteLine($"정렬된 배열 : ");
             for (int i = 0; i < iArray.Length; i++)
             {
-                Console.Write($"［{iArray[i]}］");
+                for (int j = 1; j < iCount.Length + 1; j++)
+                {
+                    if (iArray[i] == j)
+                    {
+                        iCount[j - 1]++;
+                    }
+                }
+            }
+
+            Console.WriteLine($"정렬된 값 :");
+            for (int i = 0; i < iArray.Length; i++)
+            {
+                Console.Write($" {iArray[i]}");
+            }
+            Console.WriteLine($"");
+
+            Console.WriteLine($"수 :");
+            for (int i = 0; i < iCount.Length; i++)
+            {
+                Console.Write($" {iCount[i]}");
             }
         }
     }

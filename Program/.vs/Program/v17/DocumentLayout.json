@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1046F372-A56D-4FFC-B7BB-1B19197FF476}|..\\GE_240715 \uC0BD\uC785\uC815\uB82C\\GE_240715 \uC0BD\uC785\uC815\uB82C.csproj|c:\\users\\administrator\\desktop\\unity_ge_2\\ge_240715 \uC0BD\uC785\uC815\uB82C\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{25B623F9-98E5-4965-80B1-3BED2E4C9290}|Program.csproj|c:\\users\\administrator\\desktop\\unity_ge_2\\program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B623F9-98E5-4965-80B1-3BED2E4C9290}|Program.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -20,13 +23,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240715 \uC0BD\uC785\uC815\uB82C\\Program.cs",
+              "RelativeDocumentMoniker": "..\\GE_240715 \uC0BD\uC785\uC815\uB82C\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\GE_240715 \uC0BD\uC785\uC815\uB82C\\Program.cs",
+              "RelativeToolTip": "..\\GE_240715 \uC0BD\uC785\uC815\uB82C\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T06:23:58.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\Program\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Unity_GE_2\\Program\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAADgAAAANAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwDUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T05:27:33.679Z",
+              "WhenOpened": "2024-07-15T05:28:52.687Z",
               "EditorCaption": ""
             }
           ]
