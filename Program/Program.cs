@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.ComponentModel.Design;
 using System.Diagnostics.Metrics;
 
@@ -48,37 +49,56 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            #region 계수 정렬 Count Sort
-            // 데이터의 값을 직접 비교하지 않고
-            // 단순히 각 숫자가 몇 개 있는 지 개수를 세어
-            // 저장한 다음 정렬하는 알고리즘
+            #region 이진 탐색
+            // 탐색 범위를 반으로 나누어 찾는 값을 포함한 범위를
+            // 좁혀가는 방식으로 동작하는 탐색 알고리즘
             #endregion
 
-            int[] iArray = new int[] { 1, 6, 6, 6, 5, 1, 2, 3, 1, 2, 3, 6, 5, 4 };
-            int[] iCount = new int[6];
+            // 값 할당
+            int[] iArray = new int[] { 5, 6, 8, 11, 22, 33, 44, 50, 51, 79};
+            int iSet = 79;
 
-            for (int i = 0; i < iArray.Length; i++)
+            if (SearchSort(iArray, iSet) == 0)
             {
-                for (int j = 1; j < iCount.Length + 1; j++)
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"값 {iSet}을 찾을 수 없었습니다.");
+                Console.ResetColor();
+            }
+
+
+            int SearchSort(int[] iArray, int iValue)
+            {
+                int mid = 0;
+                int left = 0;
+                int right = iArray.Length - 1;
+                int k = 0;
+                int iResult = 0;
+
+                while (left <= right)
                 {
-                    if (iArray[i] == j)
+                    mid = left + (right - left) / 2;
+
+                    Console.WriteLine($"{++k}번째 반복 : {left} <= {right} ∥ {mid}, {iArray[mid]}");
+
+                    if (iArray[mid] == iValue)
                     {
-                        iCount[j - 1]++;
+                        iResult = iValue;
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"값 찾음 : {iValue}");
+                        Console.ResetColor();
+                        break;
+                    }
+                    else if (mid > left)
+                    {
+                        left++;
+                    }
+                    else
+                    {
+                        right--;
                     }
                 }
-            }
 
-            Console.WriteLine($"정렬된 값 :");
-            for (int i = 0; i < iArray.Length; i++)
-            {
-                Console.Write($" {iArray[i]}");
-            }
-            Console.WriteLine($"");
-
-            Console.WriteLine($"수 :");
-            for (int i = 0; i < iCount.Length; i++)
-            {
-                Console.Write($" {iCount[i]}");
+                return iResult;
             }
         }
     }

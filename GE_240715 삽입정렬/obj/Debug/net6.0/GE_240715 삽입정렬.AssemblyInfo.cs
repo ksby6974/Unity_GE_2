@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240715 삽입정렬")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e30368a446e77da67178ab58a7b1b4e98571c91d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62cf3fb593ee9b8c6c9fd68bcf91cab49d26e606")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240715 삽입정렬")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240715 삽입정렬")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
