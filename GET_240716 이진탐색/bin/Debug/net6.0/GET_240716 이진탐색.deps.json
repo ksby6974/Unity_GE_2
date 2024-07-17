@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GET_240716 이진탐색/1.0.0": {
+        "runtime": {
+          "GET_240716 이진탐색.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GET_240716 이진탐색/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

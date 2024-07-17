@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\bin\Debug\net6.0\GET_240716 이진탐색.exe
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\bin\Debug\net6.0\GET_240716 이진탐색.deps.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\bin\Debug\net6.0\GET_240716 이진탐색.runtimeconfig.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\bin\Debug\net6.0\GET_240716 이진탐색.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\bin\Debug\net6.0\GET_240716 이진탐색.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.sourcelink.json
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\refint\GET_240716 이진탐색.dll
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.pdb
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\GET_240716 이진탐색.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Unity_GE_2\GET_240716 이진탐색\obj\Debug\net6.0\ref\GET_240716 이진탐색.dll
