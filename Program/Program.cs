@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.AccessControl;
@@ -52,85 +54,98 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            #region 퀵 정렬 (Quick Sort)
-            // 기준점을 획득한 다음 해당 기준점을 기준으로
-            // 배열을 나누고 한쪽에는 기준점보다 작은 값들이 위치
-            // 다른 한쪽에는 기준점보다 큰 값들이 위치하도록 정렬하는 알고리즘
+            #region 병합 정렬 ( Sort)
+            // 하나의 리스트를 두 개의 균등한 크기로 분할하고
+            // 분할된 부분 리스트를 정렬한 다음, 두 개의 정렬된 부분 리스트를
+            // 합하여 전체가 정렬된 리스트가 되게 하는 방법
 
-            // 나누어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
-            // 모든 배열이 기본 배열이 될 때까지 반복하며 정렬
-
-            // 평균적으로 O(n log n)의 시간 복잡도를 가지며
-            // 최악의 경우 O(n^2)의 시간 복잡도를 가짐
-
-            // 1. 기준점 선택
-            // 2. 기준점 기준으로 왼쪽보다 큰 값, 오른쪽보다 작은 값 탐색
-            // 3. 양 방향에서 찾은 두 원소 교환
-            // 4. 왼쪽에서 탐색하는 위치와 오른쪽에서 탐색하는 위치가
-            // 엇갈리지 않을 때까지 2번으로 돌아가 반복
-            // 5. 엇갈린 기점을 기준으로 두 개의 부분 리스트로 나누어
-            // 1번으로 돌아가 해당 부분의 리스트 길이가 1일 될 때까지 반복
-            // 6. 인접한 부분 리스트끼리 합하여 수행.
+            // 1. 리스트의 길이가 0 또는 1이면 이미 정렬된 것으로 간주
+            // 2. 그렇지 않은 경우
+            // 2 - 1. 정렬되지 않은 리스트를 절반으로 비슷한 크기의 두 부분 리스트로 나눔
+            // 2 - 2. 각 부분 리스트를 재귀적으로 병합 정렬을 이용해 정렬
+            // 2 - 3. 두 부분 리스트를 다시 하나의 정렬된 리스트로 병합
+            // 3.
             #endregion
 
             // 값 할당
             int[] iArray = new int[] { 5, 1, 9, 6, 4, 8, 3, 7, 2 };
 
-            QuickSort(iArray, 0, iArray.Length - 1);
+            MergeSort(iArray, 0, iArray.Length - 1);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"배열 :");
+            Console.WriteLine($"재정렬된 배열 :");
             Console.ResetColor();
 
             for (int i = 0; i < iArray.Length; i++)
             {
-                Console.Write($" {iArray[i]}");
+                //Console.Write($" {iArray[i]}");
             }
         }
 
-        public static void QuickSort(int[] iList, int start, int end)
+        static public void MergeSort(int[] aList, int iStart, int iEnd)
         {
-            // pivot
-            int iMid = start;
-            int iLeft = start + 1;
-            int iRight = end;
+            int iMid;
 
-            // 반복
-            while(iLeft <= iRight)
+            // 재귀 종료문
+            if (iStart < iEnd)
             {
-                Console.WriteLine($"반복 : {iLeft}, {iMid}, {iRight}");
+                // 중간 인덱스 지정
+                iMid = (iStart + iEnd) / 2;
 
-                // left가 end보다 작거나 같음
-                while (iLeft <= end && iList[iLeft] <= iList[iMid])
-                {
-                    iLeft += 1;
-                }
+                Console.Write($"【】 : {iStart} + {iEnd} ／ 2 ＝ {iMid} - ");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine($"{aList[iMid]}");
+                Console.ResetColor();
 
-                // right가 start보다 크거가 같음
-                while (iRight > start && iList[iMid] <= iList[iRight])
-                {
-                    iRight -= 1;
-                }
+                // 재귀
+                MergeSort(aList, iStart, iMid);
+                MergeSort(aList, iMid + 1, iEnd);
 
-                if (iLeft < iRight)
-                {
-                    Swap(ref iList[iLeft], ref iList[iRight]);
-                }
+                Console.WriteLine($"【병합】 : {iStart}, {iEnd} ※ {aList[iStart]}, {aList[iEnd]}");
+                // 병합
+                Merge(aList, iStart, iMid, iEnd);
             }
-
-            if (start < end)
+            else
             {
-                Swap(ref iList[iMid], ref iList[iRight - 1]);
-                QuickSort(iList, start, iRight - 1);
-                QuickSort(iList, iRight + 1, end);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"재귀 종료 : {iStart} → {aList[iStart]}");
+                Console.ResetColor();
             }
         }
 
-        static void Swap(ref int a, ref int b)
+        static public void Merge(int[] iList, int start, int middle, int end)
         {
-            int iTemp = a;
-            a = b;
-            b = iTemp;
+            int count = 0;
+            int left = start;
+            int right = middle + 1;
+            int[] iTempArray = new int[right - left + 1];
+
+            for (int k = 0; k < iTempArray.Length; k++)
+            {
+                if (iTempArray[left] < iTempArray[right])
+                {
+                    iTempArray[k] = iList[left];
+                    left++;
+                }
+                else
+                {
+                    iTempArray[k] = iList[right];
+                    right--;
+                }
+
+                if (left > right)
+                {
+                    break;
+                }
+            }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            for (int i = 0; i < iTempArray.Length; i++)
+            {
+                Console.Write($" {iTempArray[i]}");
+            }
+            Console.WriteLine($"");
+            Console.ResetColor();
         }
     }
 }

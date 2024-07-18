@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GE_240715 쉘 정렬")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("GE_240717 퀵 정렬")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b171f21dc4bb1638d02cbf2db86fcfe75826d8d")]
-[assembly: System.Reflection.AssemblyProductAttribute("GE_240715 쉘 정렬")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GE_240715 쉘 정렬")]
+[assembly: System.Reflection.AssemblyProductAttribute("GE_240717 퀵 정렬")]
+[assembly: System.Reflection.AssemblyTitleAttribute("GE_240717 퀵 정렬")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.

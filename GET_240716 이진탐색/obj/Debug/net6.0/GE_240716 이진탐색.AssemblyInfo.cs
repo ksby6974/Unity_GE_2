@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240716 이진탐색")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c082d0129f28c2f8de10da4b5392bf13303dda1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b171f21dc4bb1638d02cbf2db86fcfe75826d8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240716 이진탐색")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240716 이진탐색")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
