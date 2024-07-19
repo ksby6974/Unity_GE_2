@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240711 합성수 찾기")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b171f21dc4bb1638d02cbf2db86fcfe75826d8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1dd21b877f60c973a454dfad25f82bc5ca633d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240711 합성수 찾기")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240711 합성수 찾기")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
