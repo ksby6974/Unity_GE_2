@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240715 계수정렬")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1dd21b877f60c973a454dfad25f82bc5ca633d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee0d0f18e8fa04e42e2969871a6daef219123b46")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240715 계수정렬")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240715 계수정렬")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
