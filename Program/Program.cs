@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
+using System.Diagnostics.Tracing;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Intrinsics.X86;
 using System.Security.AccessControl;
 using System.Security.Cryptography;
 using System.Transactions;
@@ -53,58 +56,108 @@ namespace Program
 
     internal class Program
     {
-        static void Main(string[] args)
+        public class HNTower
         {
-            #region 최장 증가 부분 수열
-            // 원소가 n개인 배열의 일부 원소를 골라내서 만든 부분 수열 중
-            // 각 원소가 이전 원소보다 크다는 조건을 만족하고 그 길이가 최대인 부분 수열 
+            public int iSize = 0;
+            public int[] iArray;
 
-            // 주어진 배열에서 인덱스를 한칸씩 늘려가며 확인
-            // 내부 반복문으로 i보다 작은 인덱스들을 하나씩 살펴보면서
-            // aArray[i] > aArray[j]일 경우 count 배열을 업데이트
-
-            // 1. LIS의 첫번째는 항상 1부터 시작
-            // 2. 2보다 작은 이전의 인덱스가 없으므로 count 배열의 [i]에 값을 1 저장
-            // 3. 4보다 작은 이전 이전 인덱스 array[i] 가장 큰 count 배열의 값은 1이므로 count 배열 [i]에 1+1 = 2로 만듬
-            // 4. 1보다 작은 이전 인덱스가 없으므로 count 배열[i]의 값에 1을 저장
-            // 5. 6보다 작은 이전 이전 인덱스 array[i] 배열 중 가장 큰 값 count배열 값은 2이므로
-            // count[i]의 값에 2 + 1 = 3으로 만들어 줌
-
-            // 업데이트 기준
-            // 1. j번째 인덱스에서 끝나는 최장 증가 부분 수열의 마지막에 array[i]를 추가했을 때 LIST 길이
-            // 2. 추가하지 않고 기존의 count 배열 [i]의 값
-
-
-            #endregion
-
-            int[] aArray = new int[] { 3, 2, 4, 1, 6 };
-            int[] iCount = new int[aArray.Length];
-
-            iCount[0] = 1;
-
-            for (int i = 1; i < aArray.Length; i++)
+            public HNTower(int size)
             {
-                // 첫 원소부터 i 원소 전까지 비교합니다.
-                for (int j = 0; j < i; j++)
-                {
-                    if (aArray[i] > aArray[j])
-                    {
-                        iCount[i] = Math.Max(iCount[i], iCount[j] + 1);
-                    }
+                this.iSize = 0;
+                this.iArray = new int[size];
+            }
 
-                    // 증가 부분 수열의 길이는 1부터 시작하므로 0인 값을 1로 저장합니다.
-                    if (iCount[i] == 0)
-                    {
-                        iCount[i] = 1;
-                    }
+            public void Pop()
+            {
+                if (iSize <= 0)
+                {
+                    Console.WriteLine($"Empty.");
+                }
+                else
+                {
+                    iArray[iSize--] = 0;
                 }
             }
 
-            Console.WriteLine($"결과 :");
-            for (int i = 0; i < iCount.Length; i++)
+            public void Input(int x)
             {
-                Console.Write($"{iCount[i]} ");
+                if (iSize >= iArray.Length)
+                {
+                    Console.WriteLine($"Full.");
+                }
+                else
+                {
+                    iArray[iSize++] = x;
+                }
             }
+
+            public void Draw(int x)
+            {
+                if (x > 0)
+                {
+                    Console.Write($"■\t");
+                }
+                else
+                {
+                    Console.Write($"□\t");
+                }
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            #region 백트래킹
+            // 해를 찾는 도중 지금의 경로가 해가 될 것 가지 않으면 더 이상 들어가지 않고 이전 단계로 되돌아가는 알고리즘
+            // 해가 될 것인가 판단한 후 유망하지 않다고 결정되면 그 노드의 이전 노드로 돌아가 다음 자식 노드로 이동
+            // 해가 될 것 같은 가능성이 유망(=Promising)
+            // 해가 될 가능성이 유망하지 않은 노드에 가지 않는 것(=Pruning)
+
+            // 한번에 하나의 원판만 이동
+            // 맨 위에 있는 원판만 이동
+            // 크기가 작은 원판 위에 큰 원판을 쌓을 수 있음
+            #endregion
+
+            int iSize = 3;
+            HNTower Pole1 = new HNTower(iSize);
+            HNTower Pole2 = new HNTower(iSize);
+            HNTower Pole3 = new HNTower(iSize);
+            Pole1.Input(1);
+            Pole1.Input(1);
+            Pole1.Input(1);
+
+            Hanoi(3,'A','B','C');
+
+            Console.WriteLine($"\n───────────────────────────────────────");
+            for (int i = 0; i < iSize; i++)
+            {
+                Pole1.Draw(Pole1.iArray[i]);
+                Pole2.Draw(Pole2.iArray[i]);
+                Pole3.Draw(Pole3.iArray[i]);
+                Console.WriteLine($"");
+            }
+
+            //Console.WriteLine($"{GetGCD(78696, 19332)}");
+        }  
+
+        // 하노이의 탑
+        // n : 고리의 수
+        // from : 시작점
+        // by : 이용
+        // to : 도착점
+        static public void Hanoi(int n, char from, char by, char to)
+        {
+            if (n == 1)
+            {
+                Console.WriteLine($"【{n}】:{from},{by},{to}");
+                return;
+            }
+            else
+            {
+                Hanoi(n - 1, from, by, to);
+                Console.WriteLine($"【{n}】:{from},{by},{to}");
+                Hanoi(n - 1, by, to, from);
+            }
+            
         }
     }
 }
