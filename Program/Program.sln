@@ -37,7 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240722 탐욕법", "..\G
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240722 최장증가부분수열", "..\GE_240722 최장증가부분수열\GE_240722 최장증가부분수열.csproj", "{B8A8E987-2C6E-44F2-A435-396383B7DFA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240724 유클리드 호제법", "..\GE_240724 유클리드 호제법\GE_240724 유클리드 호제법.csproj", "{7C8E7D9A-E419-41E2-B096-7AAA60B8D893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240724 유클리드 호제법", "..\GE_240724 유클리드 호제법\GE_240724 유클리드 호제법.csproj", "{7C8E7D9A-E419-41E2-B096-7AAA60B8D893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240725 하노이의 탑", "..\GE_240725 하노이의 탑\GE_240725 하노이의 탑.csproj", "{A72576AA-AD33-488B-A4AA-F8F058E59B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240725 깊이우선탐색", "..\GE_240725 깊이우선탐색\GE_240725 깊이우선탐색.csproj", "{7C2987AB-78F6-4E6D-815F-D36E551ED306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240725 완전수", "..\GE_240725 완전수\GE_240725 완전수.csproj", "{DBE01710-C995-4CB8-8585-E5D71505939E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +123,18 @@ Global
 		{7C8E7D9A-E419-41E2-B096-7AAA60B8D893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C8E7D9A-E419-41E2-B096-7AAA60B8D893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C8E7D9A-E419-41E2-B096-7AAA60B8D893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72576AA-AD33-488B-A4AA-F8F058E59B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72576AA-AD33-488B-A4AA-F8F058E59B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72576AA-AD33-488B-A4AA-F8F058E59B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72576AA-AD33-488B-A4AA-F8F058E59B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2987AB-78F6-4E6D-815F-D36E551ED306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2987AB-78F6-4E6D-815F-D36E551ED306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2987AB-78F6-4E6D-815F-D36E551ED306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2987AB-78F6-4E6D-815F-D36E551ED306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE01710-C995-4CB8-8585-E5D71505939E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE01710-C995-4CB8-8585-E5D71505939E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE01710-C995-4CB8-8585-E5D71505939E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE01710-C995-4CB8-8585-E5D71505939E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

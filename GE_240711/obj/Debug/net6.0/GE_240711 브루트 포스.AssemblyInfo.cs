@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240711 브루트 포스")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9ccb8959a6b256f8439314b631cdedaeab173e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aa230e9f8ec7db708195281acdf5200aa5fd55e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240711 브루트 포스")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240711 브루트 포스")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

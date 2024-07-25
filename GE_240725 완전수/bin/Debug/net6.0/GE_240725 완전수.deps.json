@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GE_240725 완전수/1.0.0": {
+        "runtime": {
+          "GE_240725 완전수.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GE_240725 완전수/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
