@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240725 완전수")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aa230e9f8ec7db708195281acdf5200aa5fd55e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e1bb175742624c1c897939c5d1b83f953743464")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240725 완전수")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240725 완전수")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

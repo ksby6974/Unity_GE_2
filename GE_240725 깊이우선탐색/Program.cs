@@ -21,10 +21,10 @@
                 }
             }
 
-            public void Insert(int vertext, int edge)
+            public void Insert(int vertex, int edge)
             {
-                graph[vertext].Add(edge); // [1] -> 2 -> 3
-                graph[edge].Add(vertext); // [2] -> 1
+                graph[vertex].Add(edge); // [1] -> 2 -> 3
+                graph[edge].Add(vertex); // [2] -> 1
                                           // [3] -> 1
             }
 
