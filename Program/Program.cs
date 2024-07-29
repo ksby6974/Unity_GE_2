@@ -14,6 +14,7 @@ using System.Security;
 using System.Security.AccessControl;
 using System.Security.Cryptography;
 using System.Transactions;
+using System.Xml.Schema;
 using static Program.Program;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -61,113 +62,104 @@ namespace Program
 
     internal class Program
     {
-        public class TSort
+        public class Graph
         {
             private int iSize;
-            private int[] iDegree;
-            private List<int>[] iList;
-            private Queue<int> iQueue;
+            private int[] aParent;
+            private List<int>[] Node;
 
-            public TSort(int size)
+            public Graph(int size)
             {
-                this.iSize = size;
-                iDegree = new int[iSize];
-                iList = new List<int>[iSize];
-                iQueue = new Queue<int>();
+                iSize = size;
+                aParent = new int[iSize];
+                Node = new List<int>[iSize];
 
                 for (int i = 0; i < iSize; i++)
                 {
-                    iList[i] = new List<int>();
+                    aParent[i] = i;
+                    Node[i] = new List<int>();
                 }
             }
 
-            public void Insert(int vertex, int edge)
+            public void Union(int x, int y)
             {
-                iList[vertex].Add(edge);
+                int iX = Find(x);
+                int iY = Find(y);
 
-                // 진입차수 증가
-                iDegree[edge] += 1;
-            }
-
-            public void Search(int start)
-            {
-                iQueue.Enqueue(start);
-
-                Console.WriteLine($"\n─『탐색 {iQueue.Count}』─────────────────────");
-
-                while (iQueue.Count > 0)
+                if (Same(iX, iY))
                 {
-                    int x = iQueue.Dequeue();
-
-                    Console.Write($"【{x}】:");
-
-                    for (int i = 0; i < iDegree[i]; i++)
-                    {
-                        int next = iList[x][i];
-
-                        iQueue.Enqueue(next);
-                    }
-                    Console.WriteLine($"");
+                    return;
                 }
+
+                if (iX < iY)
+                {
+                    aParent[iY] = iX;
+                    Node[iY].Add(iX);
+                }
+                else
+                {
+                    aParent[iX] = iY;
+                    Node[iX].Add(iY);
+                }
+            }
+
+            public int Find(int x)
+            {
+                if (aParent[x] == x)
+                {
+                    return x;
+                }
+                else
+                {
+                    return aParent[x] = Find(aParent[x]);
+                }
+            }
+
+            public bool Same(int x, int y)
+            {
+                return Find(x) == Find(y);
             }
 
             public void Show()
             {
-                Console.WriteLine($"\n─『진입차수』────────────────────────────────");
-                for (int i = 0; i < iDegree.Length; i++)
+                Console.WriteLine($"\n─『배열』────────────────────────────────");
+                for (int i = 0; i < iSize; i++)
                 {
-                    Console.WriteLine($"【{i}】:{iDegree[i]}");
+                    Console.WriteLine($"【{i}】 - {aParent[i]}");
                 }
 
-                Console.WriteLine($"\n─『연결된 간선』────────────────────────────────");
-                for (int i = 0; i < iList.Length; i++)
+                Console.WriteLine($"\n─『간선』────────────────────────────────");
+                for (int i = 0; i < iSize; i++)
                 {
-                    Console.Write($"【{i}】:");
-
-                    for (int j = 0; j < iList[i].Count; j++)
-                    {
-                        Console.Write($"{iList[i][j]} ");
-                    }
-
-                    Console.WriteLine("");
+                    Console.WriteLine($"【{i}】 - {Node[i].Count}");
                 }
             }
         }
+        
 
         static void Main(string[] args)
         {
-            #region 위상 정렬 (Topological Sorting)
-            // 방향 그래프에 존재하는 각 정점들의 선행 순서를 지키며 모든 정점을 차례대로 진행하는 알고리즘
-            // ※ 사이클이 발생하는 경우 위상 정렬을 수행할 수 없습니다.
+            #region 유니온 파인드 (Union Find)
+            // 여러 노드가 존재할 때 어떤 두 개의 노드를 같은 집합으로 묶은 다음
+            // 어떤 두 노드가 같은 집합에 있는지 확인하는 알고리즘
 
-            // DAG(Directed Acyclic Graph) : 사이클이 존재하지 않는 그래프
-            // 시간 복잡도 - O(V + E)
-
-            // 위상정렬법
-            // 1. 진입 치수가 0인 정점을 Queue에 삽입
-            // 2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거
-            // 3. 간선 제거 후에 진입 차수가 0이 된 정점을 Queue에 삽입
-            // 4. Queue가 비어있을 때까지 2~3번 반복 수행
+            // 1.
+            // 2.
+            // 3.
+            // 4.
             #endregion
 
             int iInput = 8;
-            TSort sort = new TSort(iInput);
+            Graph graph = new Graph(iInput);
 
-            sort.Insert(1, 2);
-            sort.Insert(1, 5);
+            graph.Union(2, 3);
+            graph.Union(1, 3);
 
-            sort.Insert(2, 3);
-            sort.Insert(5, 6);
+            Console.WriteLine($"{graph.Same(2, 3)}");
+            Console.WriteLine($"{graph.Same(1, 3)}");
+            Console.WriteLine($"{graph.Same(4, 5)}");
 
-            sort.Insert(3, 4);
-            sort.Insert(6, 4);
-
-            sort.Insert(4, 7);
-            sort.Show();
-
-
-
-            sort.Search(1);
+            graph.Show();
         }
     }
 }

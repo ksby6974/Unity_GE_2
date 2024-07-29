@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240725 깊이우선탐�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240725 완전수", "..\GE_240725 완전수\GE_240725 완전수.csproj", "{DBE01710-C995-4CB8-8585-E5D71505939E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240726 너비우선탐색", "..\GE_240726 너비우선탐색\GE_240726 너비우선탐색.csproj", "{022536ED-2F5D-47AA-B606-84C831B22EF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240726 너비우선탐색", "..\GE_240726 너비우선탐색\GE_240726 너비우선탐색.csproj", "{022536ED-2F5D-47AA-B606-84C831B22EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240729 위상정렬", "..\GE_240729 위상정렬\GE_240729 위상정렬.csproj", "{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{022536ED-2F5D-47AA-B606-84C831B22EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{022536ED-2F5D-47AA-B606-84C831B22EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022536ED-2F5D-47AA-B606-84C831B22EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
