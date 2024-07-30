@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GE_240724 유클리드 호제법")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bf4b231274942473b5d946fce8334d219041cb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+054ddb89db5b134496c74291ddbea4246401b562")]
 [assembly: System.Reflection.AssemblyProductAttribute("GE_240724 유클리드 호제법")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GE_240724 유클리드 호제법")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
