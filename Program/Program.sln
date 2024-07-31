@@ -49,9 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240726 너비우선탐�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240729 위상정렬", "..\GE_240729 위상정렬\GE_240729 위상정렬.csproj", "{D784D63F-39FA-4D4F-8BCD-4C5DEB321D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240730 유니온 파인트", "..\GE_240730 유니온 파인트\GE_240730 유니온 파인트.csproj", "{5AF36503-8D2D-4E50-8636-33F11B475C92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240730 유니온 파인트", "..\GE_240730 유니온 파인트\GE_240730 유니온 파인트.csproj", "{5AF36503-8D2D-4E50-8636-33F11B475C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240730 크루스칼", "..\GE_240730 크루스칼\GE_240730 크루스칼.csproj", "{D57FDEAA-17F2-42A6-8D20-70390D9EAB6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GE_240730 크루스칼", "..\GE_240730 크루스칼\GE_240730 크루스칼.csproj", "{D57FDEAA-17F2-42A6-8D20-70390D9EAB6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GE_240731 누적함", "..\GE_240731 누적함\GE_240731 누적함.csproj", "{E7ECF2C1-BFFF-463E-80E7-FAA660706DDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{D57FDEAA-17F2-42A6-8D20-70390D9EAB6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D57FDEAA-17F2-42A6-8D20-70390D9EAB6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D57FDEAA-17F2-42A6-8D20-70390D9EAB6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7ECF2C1-BFFF-463E-80E7-FAA660706DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7ECF2C1-BFFF-463E-80E7-FAA660706DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7ECF2C1-BFFF-463E-80E7-FAA660706DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7ECF2C1-BFFF-463E-80E7-FAA660706DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
